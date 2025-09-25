@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 4.0.3
+  version: 4.0.4
 
 package:
   name: r-bimets
@@ -9,11 +9,11 @@ package:
 
 source:
   url: https://cran.r-project.org/src/contrib/bimets_${{ version }}.tar.gz
-  sha256: 5e1940a1b986ff04e472d2011286aa52b531dc0ad09e431c3292a46992e2569c
+  sha256: b4f68fb83b9759684890888ebab78933adc9ca7ec7392ee098e8a080719054da
 
 build:
   noarch: generic
-  number: 3
+  number: 0
   script: R CMD INSTALL --build .
 
 requirements:
